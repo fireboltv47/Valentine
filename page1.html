@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            background-color: #ffccd5;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 10%;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d63384;
+        }
+        img {
+            width: 300px;
+            border-radius: 15px;
+            margin: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .no {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+    <script>
+        let popUpCount = 0;
+        function showPopUp() {
+            popUpCount++;
+            alert(`Pleaseee, reconsider! I love you! ❤️ (${popUpCount})`);
+        }
+        function goToPage2() {
+            window.location.href = "page2.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Prawahika, will you be my Valentine?</h1>
+        <img src="image1.jpg" alt="Cute Valentine Image">
+        <div class="buttons">
+            <button class="yes" onclick="goToPage2()">Yes</button>
+            <button class="no" onclick="showPopUp()">No</button>
+        </div>
+    </div>
+</body>
+</html>
